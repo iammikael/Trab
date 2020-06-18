@@ -34,6 +34,32 @@
    background-color: #1c233e;
    border:none;
 }
+#apagar{
+   width: 80px;
+   height: 30px;
+   background-color: #B22222;
+   color: black;
+   outline: none;
+   font-size: 10px;
+   border: none;
+   border-radius: 5px;
+}
+#apagar:hover{
+   background-color: #8B0000;
+}
+#enviar{
+   width: 80px;
+   height: 30px;
+   background-color: #32CD32;
+   color: black;
+   outline: none;
+   font-size: 10px;
+   border: none;
+   border-radius: 5px;
+}
+#enviar:hover{
+   background-color: #006400;
+}
 /*/Corpo do HTML /*/
 body{
    margin: 0px;

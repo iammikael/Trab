@@ -9,15 +9,6 @@ function ver_if(){
 	document.getElementById('texto_switch').className="invisivel";
     document.getElementById('question').className="invisivel";
 }
-/*/
-function ver_else(){
-	document.getElementById('texto_else').className="visivel";
-	document.getElementById('principal').className="invisivel";
-	document.getElementById('texto_if').className="invisivel";
-	document.getElementById('texto_switch').className="invisivel";
-    document.getElementById('texto_case').className="invisivel";
-}
-/*/
 function ver_switch(){
 	document.getElementById('texto_switch').className="visivel";
 	document.getElementById('principal').className="invisivel";
@@ -32,10 +23,9 @@ function ver_quest(){
 }
 function voltar(){
 	document.getElementById('principal').className="visivel";
-	document.getElementById('texto_case').className="invisivel";
 	document.getElementById('texto_if').className="invisivel";
-	document.getElementById('texto_else').className="invisivel";
 	document.getElementById('texto_switch').className="invisivel";
+	document.getElementById('question').className="invisivel";
 }
 function reset(){
 	document.getElementById('nome').value=' ';
