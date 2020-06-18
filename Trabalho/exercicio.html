@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Ajuda Aí</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="ex.css">
+	<link rel="shortcut icon" href="img/icone.png">
+</head>
+<body>
+    <div id="tela" class="visivel">
+        <h1 id="sj">SEJA BEM-VINDO !</h1>
+        <button id="b" onclick="ver();">ENTRAR</button>
+    </div>
+
+	<div id="cab" class="invisivel">
+	<img id="logo" src="img/loguinho.png">
+	    <div class="menu">
+	    <ul>
+	    <li><button id="voltar"onclick="voltar();">HOME</button></li>
+		<li><button id="if"onclick="ver_if();">IF ELSE</button></li>
+	    <li><button id="switch" onclick="ver_switch();">SWITCH CASE</button></li>
+	   	<li><button id="quest" onclick="ver_quest();">DÚVIDAS</button></li>
+	   	</ul>
+	   	</div>
+	   </div>
+    <br>
+
+    <div id="principal" class="invisivel">
+    	<h1 id="wel">BEM-VINDO !</h1>
+ 	<div id="texto_principal">		
+    <h1 id="p1">Qual é o propósito do site ?</h1>
+    <p>
+        O intuito desta página é ajudar as pessoas que tem certas dificuldades com<br>
+     as estruturas condicionais, como por exemplo <strong>if</strong>, <strong> else </strong>, <strong>s witch </strong> e <strong>case</strong>.<br>
+    Aqui você irá aprender a como usar cada estrutura de uma forma bem didática,<br>
+     com exemplos, imagens ilustrativas e um quiz para testar o conhecimento adquirido.
+     </p>
+    <img id="img1" src="img/img1.jpg">
+    </div>
+ </div>
+
+ <div id="texto_if" class="invisivel"> 
+ 	<div>
+ 	<h1 class="titulos">Estrutura condiconal IF</h1>
+ 	</div>
+ 	<div id="principal_if">
+ 	<h2 class="sub_titulos">Para que usamos o IF?</h2>
+ 	 <p class="t_if">
+     O IF é uma estrutura de controle utilizada para tomar decisões, é também capaz de realizar uma ou mais operações em função de uma expressão  na forma de condição. Primeiro é dada uma condição e caso a mesma   seja positiva, ele executa a ação.<br>
+ 	 A estrutura básica do IF em Javascript é : <br> <br>
+     If( condição){ <br>
+       Código a ser executado <br>
+     }
+ 	 </p>
+     <p class="t_if">Essa condição é feita por operadores lógicos como <strong>maior</strong>, <strong>menor</strong>, <strong>menor igual</strong>, <strong>igual</strong>, <strong>maior igual</strong> e  <strong>diferente</strong>, podendo também podem ser usados ou não  em conjuntos com 
+     <strong>E</strong> ou  e <strong>OU</strong>.</p>
+
+     <p><img id="codigoo_if" src="img/codigoo_if.png"></p>
+
+     <p class="t_if">No exemplo fizemos uma condição verificando se um número é igual ao outro, como a condição foi verdadeira  usamos a document.write para imprimir uma mensagem na tela informando o usuário.No exemplo usado a condição sempre será verdadeira mas se caso a condição não fosse, iríamos fazer o que ? Para isso iremos definir um comando caso a condição não seje verdadeira, que no caso esse comando seria o else.
+     </p>
+     <h2 class="sub_titulos">Para que usamos o ELSE ?</h2>
+     <P class="explicacoes">
+         O else serve basicamente para suprir a sentença negativa da condição do IF, portanto quando a condição do IF for falsa o ELSE assume posição para executar a ação.
+     </P>
+     <p class="explicacoes">
+         Sua estrutura é quase igual ao do IF, com uma pequena diferença: 
+     </p>
+     <p class="explicacoes">No IF: <br>
+                If( condição){ <br>
+                    Código a ser executado <br>
+                    }
+        </p>
+        <p class="explicacoes">
+            No Else: <br>
+           else{ <br>
+              código executado se for falso <br>
+           } 
+        </p>
+        <P class="explicacoes">
+            Para não confundir sua cabeça irei usar como exemplo o mesmo código usado no IF, com a pequena diferença que vamos implementar o ELSE . 
+        </P>
+        <img id="img_else" src="img/imgelse.png">
+        <p class="explicacoes">
+            Como podemos observar no código acima no exemplo os números não são iguais, sendo assim a condição ELSE irá ser executada. Essa demonstração foi bem básica pois como podemos ver, os valores já havia sido escolhido, mas essa estrutura é extremamente útil quando os valores vem de variáveis, pois ai os valores irão ser desconhecidos.
+        </p>
+ 	</div>        
+    </div>
+ </div>
+ 
+ <div id="texto_switch" class="invisivel">
+ 	<h1 class="titulos">Estrutura condicional Switch</h1>
+    <div class="textos_principais">
+ 	<h2 class="sub_titulos">Para que usamos o SWITCH ?</h2>
+    <p class="explicacoes">
+        A estrutura condicional SWITCH permite executar um bloco de código de acordo com cada opção especificada. É indicado usar o switch quando os valores que forem ser analisados serem pré-definidos. 
+    </p>
+    <p class="explicacoes">
+        Então basicamente o objetivo do switch é fornecer uma expressão para avaliar diferentes condições com base no valor da expressão. A condição dada verifica cada caso em relação ao valor da expressão até que o valor correspondente seja encontrado, se por acaso nada corresponder, uma condição padrão será usada.
+    </p>
+    <h2 class="sub_titulos">BREAK</h2>
+    <p class="explicacoes">
+        Quando o javascript encontra a palavra break, ele automaticamente sai do bloco de switch, sendo assim irá parar a execução do bloco.
+    </p>
+    <p class="explicacoes">
+        Não é necessário colocar um break no case de um switch, pois o bloco irá acabar depois dele
+    </p>
+    <img id="img_s" src="img/imgswitch.png">
+    <P class="explicacoes">
+        Como podemos observar no exemplo acima temos a seguinte situação, o usuário entra com a operação desejada, seja ela soma, multiplicação ou etc.
+    </P>
+    <p class="explicacoes">
+        Logo depois o switch recebe a variável que em que a operação desejada foi escolhida, depois disso cada case tem a inicial das operações e a operação que o usuário escolheu irá ser realizada. 
+    </p>
+    </div>
+ </div>
+
+
+
+ <div id="question" class="invisivel">
+ 	<h1 class="titulos">Dúvidas</h1>
+    <div class="textos_principais">
+ 	<h2 class="sub_titulos">Mande suas dúvidas</h2>
+    <p class="explicacoes">
+        Nesta sessão você poderá nos mandar suas dúvidas sobre qualquer assunto que foi abordado no site.
+    </p>
+    <P class="explicacoes">
+        Basta você nos informar seu nome, email e logo abaixo sua dúvida, assim que nós acharmos a solução para o seu problema iremos entrar em contato via email.
+    </p>
+    <P class="explicacoes">Nome <input type="text" id="nome" placeholder="Informe seu Nome"></P>
+
+    <P class="explicacoes">Email <input type="text" id="email" placeholder="Informe seu Email"></P>
+    <textarea id="duv" cols="100" rows="15"></textarea>
+    <P class="explicacoes">
+        <button onclick="reset()">APAGAR</button>
+        <button onclick="enviar();">ENNVIAR</button>
+    </P>
+ </div>
+  <script type="text/javascript" src="exx.js"></script>
+</body>
+</html>
